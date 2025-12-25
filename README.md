@@ -1,20 +1,23 @@
 # AI Locator Healer
 
-An intelligent Java framework for self-healing test locators in Selenium automation. This tool automatically detects and recovers from broken XPath/CSS locators using AI-driven strategies.
+An intelligent Java framework for self-healing test locators in mobile application automation. This tool automatically detects and recovers from broken locators in Appium tests using AI-driven strategies, supporting both Android and iOS platforms.
 
 ## Features
 
 - **Automatic Locator Recovery**: Intelligently finds alternative locators when primary ones fail
-- **Multi-Platform Support**: Works with both Android and iOS automation
+- **Multi-Platform Support**: Full support for both Android and iOS mobile automation
 - **Exception Handling**: Built-in exception handler for graceful locator healing
-- **XPath & CSS Locators**: Support for both XPath and CSS selector strategies
+- **Multiple Locator Strategies**: Support for XPath, ID, Class, Content, and other mobile-specific selectors
 - **AI-Driven Healing**: Uses machine learning-based approaches to find optimal locator alternatives
+- **OCR Capability**: Tesseract-based OCR for text recognition on mobile screens
 
 ## Prerequisites
 
 - Java 17 or higher
 - Maven 3.6+
-- Selenium 4.x
+- Appium Server 2.0+
+- Android SDK (for Android testing)
+- Xcode (for iOS testing)
 
 ## Installation
 
@@ -74,10 +77,13 @@ Platform-specific configurations are available:
 
 ## Technologies Used
 
-- **Selenium WebDriver**: Web automation framework
+- **Appium**: Mobile automation framework
+- **Appium Java Client**: Java bindings for Appium
+- **Tesseract OCR**: Optical character recognition for mobile screens
 - **JUnit 5**: Testing framework
 - **Maven**: Build automation
 - **Java 17**: Programming language
+- **WebDriver**: Foundation for mobile automation support
 
 ## Contributing
 
